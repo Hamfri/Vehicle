@@ -1,0 +1,5 @@
+ALTER TABLE vehicles
+    ADD owner BIGINT;
+
+ALTER TABLE vehicles
+    ADD CONSTRAINT FK_VEHICLES_ON_OWNER FOREIGN KEY (owner) REFERENCES owners (id);

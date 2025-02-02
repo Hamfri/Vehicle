@@ -1,0 +1,10 @@
+server:
+  port: 80
+  jpa:
+    hibernate:
+      ddl-auto: validate
+logging:
+  level:
+    root:
+      - error
+      - warn

@@ -1,5 +1,10 @@
 spring:
   application:
     name: Vehicle
-server:
-  port: 6666
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:7432/vehicle
+    username: vehicle
+    password: 4c9435c2955f0cc2b7c5
